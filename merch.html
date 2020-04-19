@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Special+Elite&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/master.css">
+    <script src="js/merch.js"></script>
+    <title>Mr. Sunshine - Merch</title>
+  </head>
+  <body>
+    <header id="merchheader">
+      <div class="navbar">
+        <a href="index.html">
+          <img class="logo" src="img/logo-mrsunshine.png" alt="logo">
+        </a>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <nav>
+          <ul class="nav-leftarea">
+              <li><a href="index.html">Home</a></li>
+          </ul>
+          <ul class="nav-rightarea">
+            <li><a href="merch.html" class="active">Merch</a></li>
+          </ul>
+        </nav>
+        <label for="nav-toggle" class="nav-toggle-label">
+          <img class="articleIcon" src="img/dropdownicon.png" alt="Article icon">
+        </label>
+      </div>
+      <h1 id="js--title" class="merchtitle">Mr. Sunshine<br>Merch</h1>
+      <div class="overlay"></div>
+    </header>
+
+
+    <main id="merchmain">
+      <div class="searchWrapper" id="js--searchbar">
+        <input type="text" class="searchbar" placeholder="Search for product...">
+      </div>
+
+      <article class="productWrapper">
+        <section class="product">
+          <section class="productCard" onclick="productDetails('musicbox')">
+            <header class="productHeader">
+              <h2>Music box</h2>
+              <p class="price">&euro;15,99</p>
+            </header>
+            <img src="img/musicbox.png" alt="Mr. Sunshine music box">
+            <p class="hiddenDescription" id="musicboxDesc">The song this music box plays, the British folk song Greensleeves and the theme of Mr. Sunshine, has been part of Eugene Choi's life ever since he escaped to New York. With this music box (replicated from the show) you can continue Eugene Choi's journey as you go about your own. Music box is placed in a special Mr. Sunshine box.</p>
+          </section>
+          <button onclick="productDetails('musicbox')" type="button" name="button">Purchase</button>
+        </section>
+
+        <section class="product">
+          <section class="productCard" onclick="productDetails('matryoshka')">
+            <header class="productHeader">
+              <h2>Matryoshka</h2>
+              <p class="price">&euro;7,99</p>
+            </header>
+            <img src="img/matryoshka.jpg" alt="Mr. Sunshine matryoshka">
+            <p class="hiddenDescription" id="matryoshkaDesc">This matryoshka, a traditional Russian doll, was given to Eugene Choi by Joseph. Joseph was the American missionary who helped Eugene escape to New York and became his father figure. This matryoshka doll has gotten popular after the scene where lady Ae-Shin discovered it.</p>
+          </section>
+          <button onclick="productDetails('matryoshka')" type="button" name="button">Purchase</button>
+        </section>
+
+        <section class="product">
+          <section class="productCard" onclick="productDetails('portrait')">
+            <header class="productHeader">
+              <h2>Portrait</h2>
+              <p class="price">&euro;4,99</p>
+            </header>
+            <img src="img/portrait.jpg" alt="Mr. Sunshine portrait">
+            <p class="hiddenDescription" id="portraitDesc">This is the photo Eugene Choi and lady Ae-Shin had taken in a photo studio in Tokyo before leaving for their homes and getting seperated for once and for all. That was the idea, hadn't it been for the Japanese yakuza hunting lady Ae-Shin down. With this portrait the romantic duo will forever be with you.</p>
+          </section>
+          <button onclick="productDetails('portrait')" type="button" name="button">Purchase</button>
+        </section>
+
+        <section class="product">
+          <section class="productCard" onclick="productDetails('oxfordset')">
+            <header class="productHeader">
+              <h2>Oxford set</h2>
+              <p class="price">&euro;89,99</p>
+            </header>
+            <img src="img/oxfordset.png" alt="Mr. Sunshine Oxford set">
+            <p class="hiddenDescription" id="oxfordsetDesc">This brick set released by South Korean toy company Oxford allows you to build your own miniature Glory Hotel and run it in your very own bedroom! Contains 2783 pieces, 5 mini figures of the main cast and a vintage car (not a real one).</p>
+          </section>
+          <button onclick="productDetails('oxfordset')" type="button" name="button">Purchase</button>
+        </section>
+
+      <section class="product">
+        <section class="productCard" onclick="productDetails('springfield')">
+          <header class="productHeader">
+            <h2 class="longtitle">Springfield</h2>
+            <p class="price">&euro;39,99</p>
+          </header>
+          <img src="img/springfield.jpg" alt="Mr. Sunshine American Rifle">
+          <p class="hiddenDescription" id="springfieldDesc">This is the American rifle gunner Jang, member of the Righteous Army and lady Ae-Shin's master, stole from an American soldier. Fortunately he had a blacksmith remove a crucial part before returning it, making it unusable. That makes it safe for sale, along with the fact that this is just a toy rifle.</p>
+        </section>
+        <button onclick="productDetails('springfield')" type="button" name="button">Purchase</button>
+      </section>
+
+      <section class="product">
+        <section class="productCard" onclick="productDetails('eugenehat')">
+          <header class="productHeader">
+            <h2 class="longtitle">Eugene's hat</h2>
+            <p class="price">&euro;19,99</p>
+          </header>
+          <img src="img/eugenehat.jpg" alt="Mr. Sunshine Eugene's hat">
+          <p class="hiddenDescription" id="eugenehatDesc">Not having much luck with the ladies? This hat worn by Eugene Choi, captain of the U.S. marine corps, might just be what you were lacking. This hat looks great on anyone and can be used for all kinds of occasions and purposes. Product does not come with an Eugene Choi.</p>
+        </section>
+      <button onclick="productDetails('eugenehat')" type="button" name="button">Purchase</button>
+      </section>
+    </article>
+    </main>
+
+    <div id="modal" class="modal modal-off">
+      <article class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <header>
+          <h2 id="modal-title">Product</h2>
+          <p id="modal-price"></p>
+        </header>
+        <img id="modal-img" src="#" alt="Product image">
+        <p id="modal-description"></p>
+        <button type="button" name="button" id="modal-button" onclick="toOrderForm()">Purchase now</button>
+      </article>
+    </div>
+
+    <footer>
+      <p id="author">Gemaakt door Jeroen Bol - IWDER 2019/2020</p>
+    </footer>
+  </body>
+</html>
